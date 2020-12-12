@@ -1,15 +1,14 @@
 package top.cloudos.task.service.impl;
 
-import com.baomidou.mybatisplus.extension.api.R;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
-import top.cloudos.common.RandUserInfo;
-import top.cloudos.common.util.EmailRandomUtils;
-import top.cloudos.common.util.PhoneRandomUtils;
-import top.cloudos.task.config.UserBatchInsertThread;
+import top.cloudos.common.util.randinfo.RandUserInfoUtils;
+import top.cloudos.common.util.randinfo.EmailRandomUtils;
+import top.cloudos.common.util.randinfo.PhoneRandomUtils;
 import top.cloudos.task.entity.User;
 import top.cloudos.task.mapper.UserMapper;
 import top.cloudos.task.service.UserService;
+import top.cloudos.task.thread.UserBatchInsertThread;
 import top.cloudos.task.thread.UserThread;
 
 import java.util.ArrayList;
@@ -30,7 +29,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public List<User> createUserList() {
         List<User> users = new ArrayList<>();
-        RandUserInfo randUserInfo = new RandUserInfo();
+        RandUserInfoUtils randUserInfo = new RandUserInfoUtils();
         for (int i = 0; i < 100000; i++) {
             User user = new User();
             String info = randUserInfo.randFamilyName() + randUserInfo.randName(randUserInfo.randSex());

@@ -1,4 +1,4 @@
-package top.cloudos.common.util;
+package top.cloudos.common.util.randinfo;
 
 /**
  * @author GX

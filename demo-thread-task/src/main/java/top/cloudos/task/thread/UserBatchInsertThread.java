@@ -1,4 +1,4 @@
-package top.cloudos.task.config;
+package top.cloudos.task.thread;
 
 import top.cloudos.task.entity.User;
 import top.cloudos.task.service.UserService;

@@ -1,4 +1,4 @@
-package top.cloudos.common.util;
+package top.cloudos.common.util.randinfo;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

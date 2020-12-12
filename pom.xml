@@ -21,6 +21,12 @@
         <module>demo-design-patterns</module>
         <module>demo-thread-task</module>
         <module>demo-netty</module>
+        <module>demo-alipay</module>
+        <module>demo-oauth</module>
+        <module>demo-websocket</module>
+        <module>demo-shiro</module>
+        <module>demo-security</module>
+        <module>demo-rpc</module>
     </modules>
 
     <properties>
@@ -164,33 +170,8 @@
             <!-- 模块 start -->
             <dependency>
                 <groupId>top.cloudos.common</groupId>
-                <artifactId>allinone-common</artifactId>
-                <version>${allinone.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>top.cloudos.system</groupId>
-                <artifactId>allinone-system</artifactId>
-                <version>${allinone.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>top.cloudos.framework</groupId>
-                <artifactId>allinone-framework</artifactId>
-                <version>${allinone.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>top.cloudos.search</groupId>
-                <artifactId>allinone-search</artifactId>
-                <version>${allinone.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>top.cloudos.portal</groupId>
-                <artifactId>allinone-portal</artifactId>
-                <version>${allinone.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>top.cloudos.article</groupId>
-                <artifactId>allinone-article</artifactId>
-                <version>${allinone.version}</version>
+                <artifactId>demo-common</artifactId>
+                <version>${demo.version}</version>
             </dependency>
             <!-- 模块 end -->
 
