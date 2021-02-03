@@ -12,5 +12,11 @@
     <groupId>top.cloudos.rpc</groupId>
     <artifactId>demo-rpc</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>top.cloudos.common</groupId>
+            <artifactId>demo-common</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
