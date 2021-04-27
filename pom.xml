@@ -31,6 +31,8 @@
         <module>demo-juc</module>
         <module>demo-redis</module>
         <module>demo-zk</module>
+        <module>demo-easyexcel</module>
+        <module>demo-elasticsearch</module>
     </modules>
 
     <properties>

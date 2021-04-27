@@ -1,4 +1,4 @@
-package top.cloudos.test;
+package top.cloudos;
 
 /**
  * @author GX
