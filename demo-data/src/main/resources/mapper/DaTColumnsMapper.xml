@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.cloudos.mapper.DaTColumnsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.cloudos.entity.DaTColumns">
+        <id column="id" property="id" />
+        <result column="sort" property="sort" />
+        <result column="nationCode" property="nationCode" />
+        <result column="code" property="code" />
+        <result column="metadataChineseName" property="metadataChineseName" />
+        <result column="metadataEnglishName" property="metadataEnglishName" />
+        <result column="dataLength" property="dataLength" />
+        <result column="bindingForceType" property="bindingForceType" />
+        <result column="repeatabilityType" property="repeatabilityType" />
+        <result column="metadataType" property="metadataType" />
+        <result column="dataType" property="dataType" />
+        <result column="applicationLevelType" property="applicationLevelType" />
+        <result column="valueRange" property="valueRange" />
+        <result column="type" property="type" />
+    </resultMap>
+
+</mapper>

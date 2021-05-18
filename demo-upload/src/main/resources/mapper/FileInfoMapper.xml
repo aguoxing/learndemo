@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.cloudos.mapper.FileInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.cloudos.upload.entity.FileInfo">
+        <id column="ID" property="id" />
+        <result column="FILENAME" property="filename" />
+        <result column="IDENTIFIER" property="identifier" />
+        <result column="TOTAL_SIZE" property="totalSize" />
+        <result column="LOCATION" property="location" />
+        <result column="FILETYPE" property="filetype" />
+        <result column="REF_PROJECT_ID" property="refProjectId" />
+        <result column="UPLOAD_USER" property="uploadUser" />
+        <result column="UPLOAD_TIME" property="uploadTime" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        ID, FILENAME, IDENTIFIER, TOTAL_SIZE, `LOCATION`, FILETYPE, REF_PROJECT_ID, UPLOAD_USER,
+        UPLOAD_TIME
+    </sql>
+    <select id="selectFileList" resultMap="BaseResultMap" parameterType="top.cloudos.entity.FileInfo">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM FILE_INFO
+        <if test="filename != null">
+            WHERE FILENAME = #{filename,jdbcType=VARCHAR}
+        </if>
+        ORDER BY UPLOAD_TIME
+    </select>
+
+</mapper>

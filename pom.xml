@@ -33,6 +33,8 @@
         <module>demo-zk</module>
         <module>demo-easyexcel</module>
         <module>demo-elasticsearch</module>
+        <module>demo-data</module>
+        <module>demo-upload</module>
     </modules>
 
     <properties>
