@@ -8,8 +8,6 @@ import top.cloudos.common.util.QRCodeUtils;
 import top.cloudos.task.entity.User;
 import top.cloudos.task.service.UserService;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

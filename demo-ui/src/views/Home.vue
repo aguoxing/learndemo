@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app-container">
     <!-- 上传器 -->
     <uploader
         ref="uploader"
@@ -28,7 +28,7 @@ export default {
     return {
       options: {
         //目标上传 URL，默认POST
-        target: "http://127.0.0.1:5000/uploader/chunk",
+        target: "http://127.0.0.1:8086/uploader/chunk",
         //分块大小(单位：字节)
         chunkSize: '2048000',
         //上传文件时文件内容的参数名，对应chunk里的Multipart对象名，默认对象名为file
@@ -87,6 +87,9 @@ export default {
     },
     onFileError(rootFile, file, response, chunk) {
       console.log('上传完成后异常信息：'+response);
+    },
+    onFileProgress() {
+
     },
 
     /**

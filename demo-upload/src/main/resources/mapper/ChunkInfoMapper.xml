@@ -22,7 +22,7 @@
         TOTAL_CHUNKS, TOTAL_SIZE, FILETYPE
     </sql>
 
-    <select id="selectChunkNumbers" parameterType="top.cloudos.entity.ChunkInfo" resultType="int">
+    <select id="selectChunkNumbers" parameterType="top.cloudos.upload.entity.ChunkInfo" resultType="int">
         select CHUNK_NUMBER
         from CHUNK_INFO
         where IDENTIFIER = #{identifier,jdbcType=VARCHAR}

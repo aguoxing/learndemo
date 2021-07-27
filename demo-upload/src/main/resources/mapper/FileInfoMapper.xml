@@ -20,7 +20,7 @@
         ID, FILENAME, IDENTIFIER, TOTAL_SIZE, `LOCATION`, FILETYPE, REF_PROJECT_ID, UPLOAD_USER,
         UPLOAD_TIME
     </sql>
-    <select id="selectFileList" resultMap="BaseResultMap" parameterType="top.cloudos.entity.FileInfo">
+    <select id="selectFileList" resultMap="BaseResultMap" parameterType="top.cloudos.upload.entity.FileInfo">
         SELECT
         <include refid="Base_Column_List"/>
         FROM FILE_INFO

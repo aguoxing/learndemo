@@ -1,8 +1,8 @@
 package top.cloudos.task.thread;
 
 import lombok.extern.slf4j.Slf4j;
-import top.cloudos.task.entity.User;
 import top.cloudos.task.service.UserService;
+import top.cloudos.task.entity.User;
 
 import java.util.List;
 import java.util.concurrent.Callable;

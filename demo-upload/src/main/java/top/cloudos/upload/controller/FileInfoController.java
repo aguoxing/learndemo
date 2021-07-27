@@ -3,8 +3,8 @@ package top.cloudos.upload.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import top.cloudos.upload.config.ApiResult;
 import top.cloudos.upload.config.ChunkResult;
+import top.cloudos.upload.config.ApiResult;
 import top.cloudos.upload.entity.ChunkInfo;
 import top.cloudos.upload.entity.FileInfo;
 import top.cloudos.upload.service.ChunkInfoService;
@@ -28,7 +28,7 @@ import java.io.OutputStream;
  */
 @Slf4j
 @RestController
-@RequestMapping("/file-info")
+@RequestMapping("/uploader")
 public class FileInfoController {
     @Autowired
     private ChunkInfoService chunkInfoService;
