@@ -1,7 +1,10 @@
 package top.cloudos.easyexcel;
 
+import cn.hutool.core.util.IdUtil;
 import com.alibaba.excel.EasyExcel;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
+import org.junit.platform.commons.util.StringUtils;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -28,10 +31,14 @@ public class EasyExcelTest {
 
     @Test
     public void simpleRead() {
-        String fileName = "E:\\download\\1618652843962用户数据.xlsx";
-        List<Map<Integer, String>> data = EasyExcelUtils.syncRead(fileName,0,0);
+        String fileName = "E:/普宁档案馆项目部署环境准备/文书档案统计表（含未入馆单位）(1).xls";
+        List<Map<Integer, String>> data = EasyExcelUtils.syncRead(fileName,0,3);
+        int a = 0;
         for (Map<Integer, String> obj : data) {
-            System.out.println(obj);
+            String sql = String.format(
+            "INSERT INTO `sys_dept`(dept_id,parent_id,dept_name,fonds_identifier) VALUES ('%s','100','%s','%s');", 220+a,obj.get(1),obj.get(0));
+            System.out.println(sql);
+            a++;
         }
     }
 

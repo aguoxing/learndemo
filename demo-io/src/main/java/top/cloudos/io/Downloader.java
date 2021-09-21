@@ -170,7 +170,7 @@ public class Downloader {
     }
 
     public static void main(String[] args) throws IOException {
-        String url = "http://qdall01.baidupcs.com/file/dd8d775b1t108e73fd392208d2556151?bkt=en-038bee77e919b76a6c79812f408062d98c8ab6950115d073d440a4832d67a8097cf8e11a99e054d8&fid=743503436-250528-754154547030311&time=1608282324&sign=FDTAXUGERLQlBHSKfWaqi-DCb740ccc5511e5e8fedcff06b081203-Js5OWjbN4SZmu9JEpFkCRd8mcCs%3D&to=34&size=1828644607&sta_dx=1828644607&sta_cs=9261&sta_ft=zip&sta_ct=6&sta_mt=5&fm2=MH%2CXian%2CAnywhere%2C%2Cguangdong%2Cct&ctime=1582203732&mtime=1600526882&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=1828644607&vuk=743503436&iv=-2&htype=&randtype=&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-08ec34d04c4975be7ec3f24431a5cb79556f20e47d3a7874244cc2f5b1eb5c8f94a5f3b6115854e0&sl=81395790&expires=8h&rt=pr&r=510923606&vbdid=2073157003&fin=Sky_Mi6_20.2.20Dev_Pie%28B11F8FE555%29.zip&rtype=1&dp-logid=3181618744837129063&dp-callid=0.1&tsl=5&csl=39&fsl=-1&csign=vysUJ0gFL%2FZonR85YrT9SjvAQXY%3D&so=1&ut=8&uter=0&serv=0&uc=3200815480&ti=643d9844218956627489adcd7319bfb80c18fa769c07f7d2&hflag=30&adg=c_ebf83252f9cffc41ed6699d1ab6971bd&reqlabel=250528_f_c6c367f07580851a265e978cea6a1412_-1_c83c0fd29def88a6234825ed365691e2&by=themis";
+        String url = "http://iso.mirrors.ustc.edu.cn/centos/8.4.2105/isos/x86_64/CentOS-8.4.2105-x86_64-boot.iso";
         new Downloader(url).start();
     }
 }

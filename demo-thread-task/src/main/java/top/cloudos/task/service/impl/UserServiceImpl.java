@@ -30,7 +30,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     public List<User> createUserList() {
         List<User> users = new ArrayList<>();
         RandUserInfoUtils randUserInfo = new RandUserInfoUtils();
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 500000; i++) {
             User user = new User();
             String info = randUserInfo.randFamilyName() + randUserInfo.randName(randUserInfo.randSex());
             String name = info.split("-")[0];
@@ -60,7 +60,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         List<User> newList = null;
         // 创建一个线程池，数量和开启线程的数量一样
         ExecutorService executor = Executors.newFixedThreadPool(runSize);
-        // 创建两个个计数器
+        // 创建两个计数器
         CountDownLatch begin = new CountDownLatch(1);
         CountDownLatch end = new CountDownLatch(runSize);
 

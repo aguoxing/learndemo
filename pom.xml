@@ -35,6 +35,7 @@
         <module>demo-elasticsearch</module>
         <module>demo-upload</module>
         <module>demo-mq</module>
+        <module>demo-websocket</module>
     </modules>
 
     <properties>
